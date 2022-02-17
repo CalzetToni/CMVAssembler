@@ -1,7 +1,7 @@
 # Defaults:
 input_dir="./";
 ext='fastq';
-cores=1;
+cores=1
 
 # Usage:
 echo " Clean fastq paired end files from human host
@@ -35,11 +35,11 @@ shift "$(($OPTIND -1))"
 if [ -d ${output_dir} ]
 then
         rm -r ${output_dir}
+        pwd
 fi
 
 # Create output directory anyway
 mkdir $output_dir
-
 
 # Loop files in {input_dir} with extension {ext}
 for f in $input_dir/*_R1.$ext
