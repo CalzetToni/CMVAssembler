@@ -52,7 +52,7 @@ do
 		-o $output_dir/${sampleName##*/} \
 		-t ${cores}
 
-	mv $output_dir/${sampleName##*/}/transcripts.fasta $output_dir/${sampleName##*/}/${sampleName##*/}_assembly.fasta
+	mv $output_dir/${sampleName##*/}/contigs.fasta $output_dir/${sampleName##*/}/${sampleName##*/}_assembly.fasta
 	mkdir $output_dir/assemblies/${sampleName##*/}
 	cp $output_dir/${sampleName##*/}/${sampleName##*/}_assembly.fasta $output_dir/assemblies/${sampleName##*/}
 
