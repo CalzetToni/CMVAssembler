@@ -48,6 +48,7 @@ do
 		--metaviral \
 		--pe1-1 ${sampleName}_R1.$ext \
 		--pe1-2 ${sampleName}_R2.$ext \
+		-k 21,33,55,77,99,127 \
 		-o $output_dir/${sampleName##*/} \
 		-t ${cores}
 
